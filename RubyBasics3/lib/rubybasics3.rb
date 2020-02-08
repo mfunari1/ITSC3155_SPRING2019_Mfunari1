@@ -17,5 +17,10 @@ raise ArgumentError if isbn.empty? || price <= 0
 @price = Float(price)
 
 end
+def price_as_string
+
+format("$%.2f", @price)
+
+end
 #end
 end
