@@ -34,4 +34,17 @@ class JellyBean < Dessert
     
   end
   attr_accessor :flavor
+  attr_accessor :calories
+  attr_accessor :name
+  
+  def delicious?
+    # YOUR CODE HERE
+    
+    if (@flavor != "black licorice")
+      return true
+    else
+      return false
+    end
+  end
+  
 end
